@@ -8,6 +8,11 @@ Welcome to FLEXCARE's documentation!
 
 lorem ipsum
 
+test1
+.. figure:: new_Experiment.png
+test2
+.. figure:: _static/new_Experiment.png
+
 Contents:
 
 .. toctree::

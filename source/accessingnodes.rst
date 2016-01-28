@@ -46,49 +46,49 @@ You can start the tool either by clicking on Quickstart jFed experimenter tool o
 
 After jFed starts, you need to choose the path of your certificate and enter the password 
 
-  .. figure:: ../images/jfed_login.png
+  .. figure:: _static/jfed_login.png
 
 Click on New to start a new experiment.
 
-  .. figure:: ../images/new_Experiment.png
+  .. figure:: _static/new_Experiment.png
 
 Click on RSpec Editor tab.
 
-  .. figure:: ../images/RSpec_Editor.png
+  .. figure:: _static/RSpec_Editor.png
 
 Copy the example RSpec at the buttom of this page under "Resource Descriptions (RSpecs)", which is used to describe the resources required for the experiment.
 
 Paste it to RSpec editor
 
-  .. figure:: ../images/RSpec_Editor_withCode.png
+  .. figure:: _static/RSpec_Editor_withCode.png
 
 Click on Run to start an experiment
 
 Choose a slice name for the experiment, project name and the duration of the experiment. In this example the slice name is "test" and project name is "fgre". The duration of the experiment is 2 hours 
 
- .. figure:: ../images/Slice_name.png
+ .. figure:: _static/Slice_name.png
 
 Wait for access. It may take some time to start and initialise the resources. Click ok to complete
 
- .. figure:: ../images/initialize.png
+ .. figure:: _static/initialize.png
 
 After initialisation phase finishes, the requested node will become ready and the connectivity to the node will be tested.
 If everything is going well, all mentioned steps will be green as you can see from the folloiwng picture
 
- .. figure:: ../images/READY.png
+ .. figure:: _static/READY.png
 
 Press on Login button to log into the node
 Type yes to continue
 
-.. figure:: ../images/yes_to_login.png
+.. figure:: _static/yes_to_login.png
 
 Now you logged into the node and it is ready for your configurations 
 
-.. figure:: ../images/logedin.png
+.. figure:: _static/logedin.png
 
 Click on Terminate after you finish your experiment to release the resources
 
-.. figure:: ../images/release_resources.png
+.. figure:: _static/release_resources.png
 
 You see from the previous picture that all active nodes are deleted from our experiment. 
 
@@ -105,16 +105,16 @@ Select from the target authority dropdown list "fuseco.fokus.fraunhofer.de". Thi
 
 Select from "type of test" the "be.iminds.ilabt.jfed.lowlevel.api.test.TestAggregateManager3" to test against GENI Aggregate Manager API Version 3.
 
- .. figure:: ../images/jfedAutoTestingSelectTypeOfTest.png
+ .. figure:: _static/jfedAutoTestingSelectTypeOfTest.png
 
 Now you should configure the test environment. Click on "Test Arguments" to set additional test arguments. Here you should specify at least "fixed_rspec". This is needed first on allocate request and will be used also for further tests. An example for this rspec you can find at the buttom of this page under "Resource Descriptions (RSpecs)". With this example Rspec, the jFed automated testing GUI will basically create a virtual machine, log in to it and delete it finally. It will run the tests in automated scenario one by one and test the testbed by calling the methods defined within GENI Aggregate Manager API Version 3. 
 
- .. figure:: ../images/jfedAutoTestingTestArguments.png
+ .. figure:: _static/jfedAutoTestingTestArguments.png
 
 
 Optionally, if you want to test accessability using another ssh key pair, you can add these also as extra arguments. To do so choose a file for  "fixed_ssh_public_key_file" and "fixed_ssh_private_key_file" by clicking the button next to these arguments. Afterwards type the password for the ssh private key into the textbox for the argument "fixed_ssh_private_key_password".
 
- .. figure:: ../images/jfedAutoTestingTestArgumentSSHKeys.png
+ .. figure:: _static/jfedAutoTestingTestArgumentSSHKeys.png
 
 Click on "Run Tests" and see the compatibility of the testbed for the automated scenario tests.
 

@@ -1,7 +1,7 @@
 Welcome to FLEXCARE's documentation!
 ====================================
 
-lorem ipsum
+lorem ipsum test
 
 test image:
   .. figure:: _static/new_Experiment.png

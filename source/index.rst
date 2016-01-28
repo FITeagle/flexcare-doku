@@ -1,27 +1,30 @@
-.. FLEXCARE documentation master file, created by
-   sphinx-quickstart on Thu Dec 17 01:27:49 2015.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Welcome to FLEXCARE's documentation!
 ====================================
 
 lorem ipsum
 
-test
+test image:
   .. figure:: _static/new_Experiment.png
 
-Contents:
+This documentation describes how the `FUSECO Playground <http://www.fuseco-playground.org>`_ can be accessed through its
+different interfaces.
+The focus lies on the users, not on technologies.
+Therefore, the documentation should allow users first to be able to access resources the most simple way (e.g. via SSH).
+Then, different other access technologies are being described (such as 
+`FIRE <http://fed4fire.eu>`_/`GENI <http://geni.net>`_, 
+`FI-PPP <http://xipi.eu>`_ or 
+`EIT <http://testbeds.eu>`_ API's).
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   fusecofacility
+   resourcedetails
+   accessingnodes
+..   account
+..   tipsandtricks
+..   storage
+..   omfandoml
+..   tutorials
+..   todo
 

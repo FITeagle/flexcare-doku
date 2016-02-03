@@ -29,7 +29,7 @@ Depending on the used client, you might first need to configure the according te
 
 * SFA Aggregate Manager v3
 
-  * URL: https://fuseco.fokus.fraunhofer.de/api/sfa/am/v3
+  * URL: https://flexcare.fokus.fraunhofer.de/sfa/api/am/v3
   * URN: urn:publicid:IDN+fuseco.fokus.fraunhofer.de+authority+root
 
 * SFA User and Slice API: 

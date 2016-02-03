@@ -6,13 +6,8 @@ The FLEXCare project aims to extend the existing testbed facilities from the FLE
 .. toctree::
    :maxdepth: 3
 
+   flexproject
    fusecofacility
    resourcedetails
    accessingnodes
-..   account
-..   tipsandtricks
-..   storage
-..   omfandoml
-..   tutorials
-..   todo
 

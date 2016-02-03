@@ -20,6 +20,7 @@ Figure: LTE245 Access Point
 It is dual band capable and is available in 3GPP Bands 1/13, 4/13, 2/5 or 7/13. Supporting 2x2 MIMO with an output power of +10dBm per port, the 245 provides comprehensive LTE operation in a compact form factor.
 
 Table: LTE 245F Key Features:
+
 =========================== ==================================
 Features                    Details
 =========================== ==================================
@@ -63,7 +64,7 @@ The ‘S1’ network interface is presented via two 1Gbps Ethernet ports.
 Physical Interfaces
  
 .. figure:: _static/lte245-lte-femto-cell.png
-Figure 8: LTE245 LTE femto cell
+Figure: LTE245 LTE femto cell
 
 The following physical interfaces are presented on the enclosure panel:
 

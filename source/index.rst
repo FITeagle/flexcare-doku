@@ -10,4 +10,8 @@ The FLEXCare project aims to extend the existing testbed facilities from the FLE
    fusecofacility
    resourcedetails
    accessingnodes
+   flexext
+   remoteaccess
+   sfadetails
+
 

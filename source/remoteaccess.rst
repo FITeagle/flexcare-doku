@@ -73,7 +73,8 @@ The list of available networks is preconfigured in the XML configuration file of
 
 **List available networks**
 
-  ``mm.list_networks``
+::
+  mm.list_networks
 
 .. figure:: _static/code1.png
 

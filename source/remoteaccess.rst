@@ -148,6 +148,7 @@ To remotely access the mobility manager GUI (MM-GUI) on a Linux UE a SSH connect
 Change to the MM-GUI location on the file system:
 
   ``ngniadm@epc-client-bob:~$ cd /opt/OpenEPC/mm_gui/``
+
   ``ngniadm@epc-client-bob:/opt/OpenEPC/mm_gui$``
 
 **Start of the MM-GUI:**
@@ -163,12 +164,13 @@ Figure: MM-GUI state: detached
 The figure below depicts that two access networks are available including the link quality and the current connection status. Clicking on one access network will toggle the connection status.  
 
 The color of the icon to the left indicates the current status of an access network connectivity:
+
 * green: active and selected
 * yellow: connection or handover in progress
 * red: not connected
 * gray: disabled
 
-.. figure:: _static/mm-gui-attached.png 
+.. figure:: _static/mm-gui-atached.png 
 Figure: MM-GUI state: attached (LTE)
 
 Android UE
@@ -241,7 +243,7 @@ Access Network
 eNodeB
 ------
 
-The FUSECO Playground access network consists of the same physical eNodeB from ip.access as the NILAB [8] and iMinds [9] LTE testbeds. Therefore we have adopted the LTErf implementation done in FLEX to control the ip.access eNodeB. Table 1 gives a short feature summary. For further details investigate the LTErf documentation provided at [10].
+The FUSECO Playground access network consists of the same physical eNodeB from ip.access as the `NILAB <http://nitlab.inf.uth.gr/NITlab/index.php/testbed/lte-experimentation/testbed-deployment-lte>`_ and `iMinds <http://www.iminds.be/en>`_ LTE testbeds. Therefore we have adopted the LTErf implementation done in FLEX to control the ip.access eNodeB. Table 1 gives a short feature summary. For further details investigate the `LTErf documentation <http://nitlab.inf.uth.gr/NITlab/index.php/testbed/lte-experimentation/lte-omf-am-service/33-testbed/lte-documentation/497-lte-base-station-control-service-documentation>`_.
 
 ================================= ================================ ========================================
 Feature                           Example                          Description
@@ -261,7 +263,7 @@ Table: Access Network Features
 ACS
 ---
 
-As the ip.access LTE245F eNodeB supports the TR-069 protocol [11], it was aimed to provide remote configuration of the ip.access eNodeB through an Auto-Configuration Server (ACS). At the time of writing this deliverable, two ACS implementations are under evaluation. One implementation of a CPE WAN Management Protocol (CWMP) [12]  ACS was implemented by Fraunhofer FOKUS and another ACS is available from ip.access. Both system can be used to configure and control TR-069 capable devices. 
+As the ip.access LTE245F eNodeB supports the `TR-069 protocol <https://www.broadband-forum.org/technical/download/TR-069_Amendment-5.pdf>`_, it was aimed to provide remote configuration of the ip.access eNodeB through an Auto-Configuration Server (ACS). At the time of writing this deliverable, two ACS implementations are under evaluation. One implementation of a `CPE WAN Management Protocol (CWMP) <https://www.broadband-forum.org/cwmp.php>`_  ACS was implemented by Fraunhofer FOKUS and another ACS is available from ip.access. Both system can be used to configure and control TR-069 capable devices. 
 
 The basic configuration required to commission an AP to allow it to connect to a TR-069 ACS is in a small database in the /sysconfig/commonstate.db file. The AP uses this information to establish the connection to the ACS.
 
@@ -361,12 +363,12 @@ One of the Android UEs can be placed into the shield box. Remote access to the d
 
 Table: Feature list attenuator
 
-The table shows some use examples of the capabilities from the JWF attenuator. For more detail please have a look at the documentation [13] from JFW industries. 
+The table shows some use examples of the capabilities from the JWF attenuator. For more detail please have a look at the `documentation from JFW industries <http://www.jfwindustries.com/3.x.xFirmware/FirmwareManual.pdf>`_. 
 
 Core Network
 ============
 
-The FUSECO Playground provides an OpenEPC Rel. 5 developed by Fraunhofer FOKUS [14]. OpenEPC is a prototype implementation of the 3GPP Release 8 Evolved Packet Core (EPC) that will allow academic and industrial researchers and engineers around the world to obtain a practical look and feel of the capabilities of the Evolved Packet Core. OpenEPC can be integrated with various access network technologies and different application domains and thus provides an excellent foundation for experimentation.
+The FUSECO Playground provides an OpenEPC Rel. 5 developed by `Fraunhofer FOKUS <http://www.fokus.fraunhofer.de>`_. OpenEPC is a prototype implementation of the 3GPP Release 8 Evolved Packet Core (EPC) that will allow academic and industrial researchers and engineers around the world to obtain a practical look and feel of the capabilities of the Evolved Packet Core. OpenEPC can be integrated with various access network technologies and different application domains and thus provides an excellent foundation for experimentation.
 
 Due to licensing policies the OpenEPC can be only used as a service with no direct access to the host where the EPC services are running. The LTE testbed is already pre-configured which enables ready to go experimentation. However, the OpenEPC is remotely accessible though the LTErf extentions, implemented within this project. The following table gives an overview about the available features. Additional features could be implemented based on the demand of upcoming experiments.
 

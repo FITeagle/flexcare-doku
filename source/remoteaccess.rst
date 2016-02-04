@@ -71,9 +71,8 @@ The mobility manager supports multiple commands, to get information about availa
 
 The list of available networks is preconfigured in the XML configuration file of the mobility manager.
 
-**List available networks**
+**List available networks**::
 
-.::
   mm.list_networks
 
 .. figure:: _static/code1.png
@@ -82,9 +81,9 @@ Figure: List of available networks
 
 The mm.list_networks command returns the list of available networks and their current connectivity status.  The above example outputs shows that two networks are available and that the client is not connected nor attached to anyone. FUSECO24 is the SSID of the Wi-Fi access point in the FUSECO Playground.
 
-**Connect to WiFi**
+**Connect to WiFi**:: 
 
-  ``mm.connect_l3 FUSECO24``
+  mm.connect_l3 FUSECO24
 
 .. figure:: _static/code2.png
 

@@ -55,15 +55,15 @@ A mobility manager is installed on every Linux UE. With this software the experi
 
 Connect to Alice or Bob and start the mobility manger (mm) service::
 
-  ``ngniadm@epc-client-alice:~$ sudo start mm``
+  ngniadm@epc-client-alice:~$ sudo start mm
 
-  ``mm start/running, process 3996``
+  mm start/running, process 3996
 
 The init-script executes the Wharf process in a screen session. The Wharf console output can be seen while connecting to the screen session.
 
 Connect to console of mobility manager::
 
-  ``sudo screen -r mm``
+  sudo screen -r mm
 
 The key combination of CTRL+a followed by d triggers a disconnect from the screen terminal.
 

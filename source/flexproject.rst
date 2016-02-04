@@ -9,12 +9,15 @@ This section provides an overview how the FUSECO testbed is integrated in the FL
 Architecture
 ============
 
-The figure below gives an overview of the resource provisioning and control architecture implemented. Access to the resources of the FUSECO testbed is controlled by the FITeagle system. It serves as single point of entry to the FUSECO testbed, providing different interfaces (delivery mechanisms) for the experimenter. Resource Adapters are responsible for the translation of experimenter’s requests and execution of resource specific commands (e.g. connect to an UDP port at the OpenEPC (ANDSF) to attach/disconnect UEs or set QoS parameters).  The FITeagle framework is described in detail in subsection 3.2.1. 
+The figure below gives an overview of the resource provisioning and control architecture implemented. 
 
-.. figure:: _static/fiteagle-testbed-access.png
-Figure: FITeagle Testbed Access Architecture
+Provisioning access of resources to experiments is handled by the `FITeagle <http://fiteagle.org>`_ tool and its SFA interface. On top of this interface any suitable SFA client may be used, but the FLEXCare testbed provides an MySlice portal for enabling experimenters an easy way to list and reserve the offered resources.
 
-The Auto-Configuration Server (ACS) provides an interface to control the LTE 245F femto cell and is described in detail in section 
+For experiment control the main difference to the architecture proposed in D1.1 lies in the addition of the `LTErf <http://nitlab.inf.uth.gr/NITlab/index.php/testbed/lte-experimentation/lte-omf-am-service?id=464>`_ service, instead of using the FRCP capabilities within FITeagle. It is now used to provide information and control capabilities of the `OpenEPC <http://www.openepc.com/>`_ network and the deployed `ip.access <http://www.ipaccess.com/>`_ (LTE245F) eNodeB to experimenters. To achieve this integration, an extension for LTErf was developed, which integrates the OpenEPC into the homogenous FLEX tool environment. 
+
+.. figure:: _static/proof-of-concept.png
+
+Additionally, an extension to LTErf is proposed in development that enables a `JFW Industries <http://www.jfwindustries.com/>`_ attenuator to be controlled by experimenters. This will allow them fine-grained manipulation means on LTE radio layer.
 
 Control and Experimentation Plane
 =================================

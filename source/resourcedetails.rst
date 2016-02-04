@@ -17,7 +17,8 @@ The LTE Access Network of the FUSECO playground is an indoor deployment at the F
 4.	LTE 2600 / Telefonica: DL: 2670 -- 2690 MHz; UL: 2550 -- 2570 MHz (2x5MHz)
 
 Furthermore there are some restrictions to use the aforementioned frequencies. Operation is only allowed indoor with maximum 10mW ERP.
-The testbed (see Figure 1) consists of multiple physical nodes that are deployed to support end2end LTE experiments. The UEs are supporting the connectivity to the available radio access technologies of the testbed. The FUSECO playground is providing 2G, 3G and 4G radio access besides WiFi. Technical details regarding the femto cells can be found in the annex. The EPC core network is deployed on multiple physical servers which hosts the OpenEPC [2] software. The operator backhaul network contains multiple physical servers that provide additional features that could be required for experimentation. Additional servers can be added if needed for specific experiments. All nodes are connected to the central management network, which can be used for remote access. 
+
+The testbed (see Figure 1) consists of multiple physical nodes that are deployed to support end2end LTE experiments. The UEs are supporting the connectivity to the available radio access technologies of the testbed. The FUSECO playground is providing 2G, 3G and 4G radio access besides WiFi. Technical details regarding the femto cells can be found in the annex. The EPC core network is deployed on multiple physical servers which hosts the `OpenEPC <http://www.openepc.com/>`_ software. The operator backhaul network contains multiple physical servers that provide additional features that could be required for experimentation. Additional servers can be added if needed for specific experiments. All nodes are connected to the central management network, which can be used for remote access. 
 
 .. figure:: _static/fuseco-lte.png
 Figure: FUSECO LTE architecture deployment
@@ -27,13 +28,15 @@ LTE Evolved Packet Core Network Deployment
 ==========================================
 
 The FUSECO playground is currently operating an OpenEPC release 5. OpenEPC  is a prototype implementation of the 3GPP Release 8 Evolved Packet Core (EPC) that will allow academic and industrial researchers and engineers around the world to obtain a practical look and feel of the capabilities of the Evolved Packet Core. OpenEPC can be integrated with various access network technologies and different application domains and thus provides an excellent foundation for own research activities and/or the establishment of Next Generation Mobile Network (NGMN) testbeds. OpenEPC was developed by Fraunhofer FOKUS competence center NGNI and TU Berlin - AV. 
+
 The Auto-Configuration Server (ACS) is described below.
 
 
 LTE UEs
 =======
 
-The FUSECO Clients are Lenovo M93 Tiny, which support multiple operating systems as well as different radio access technologies. There are several LTE USB dongles available that can be attached to the FUSECO Clients.  
+The FUSECO Clients are Lenovo M93 Tiny, which support multiple operating systems as well as different radio access technologies. There are several LTE USB dongles available that can be attached to the FUSECO Clients.
+
 It is planned to support remote access to Android devices (e.g. smartphones) that are connected to the FUSECO Clients. Furthermore the OpenEPC Mobility Manager (see Figure 2) is installed at the aforementioned client to handle attachments, detachments and handovers. Additionally the Mobility Manager measures the signal strength of WiFi and LTE equipment attached. 
 
 .. figure:: _static/mobility-manager.png
@@ -92,6 +95,7 @@ Further details are given in the table below:
 
 ====================== ======== =========================
 SIM Card model         Quantity Technical Specifications
+====================== ======== =========================
 Sysmocom sysmoUSIM-GR1 5        Authentication algorithm : Milenage
                                 K  : 00000000000000000000000000000000
                                 OP   : 00000000000000000000000000000000
